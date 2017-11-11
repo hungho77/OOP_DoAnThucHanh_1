@@ -215,7 +215,11 @@ Polynomial Polynomial::operator-(const Polynomial & f)
 		fxResult.m_fx.push_back(this->getMonomial(i));
 	//neu da thuc thu 2 con don thuc chua duoc them vao hieu
 	for (j; j < f.m_fx.size(); j++)
-		fxResult.m_fx.push_back(f.getMonomial(j));
+	{
+		Monomial x(-f.getMonomial(j).getA(), f.getMonomial(j).getN());
+		fxResult.m_fx.push_back(x);
+		j++;
+	}
 	return fxResult;
 }
 
