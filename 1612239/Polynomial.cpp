@@ -113,12 +113,12 @@ void Polynomial::output(ostream & os)
 	os << endl;
 }
 
-Monomial Polynomial::getMonomial(int i)
+Monomial& Polynomial::getMonomial(int i)
 {
 	return this->m_fx[i];
 }
 
-Monomial Polynomial::getMonomial(int i) const
+Monomial& Polynomial::getMonomial(int i) const
 {
 	return this->m_fx[i];
 }
@@ -288,7 +288,6 @@ Polynomial Polynomial::operator%(const Polynomial & f)
 	}
 	return ftemp;
 }
-
 
 Polynomial::~Polynomial()
 {

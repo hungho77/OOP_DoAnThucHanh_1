@@ -33,8 +33,8 @@ public:
 	void operator = (const CustomArray &a);
 	//---------------------//
 	//toan tu lay gia tri 1 phan tu
-	T operator [] (int n);
-	T operator [] (int n) const;
+	T& operator [] (int n);
+	T& operator [] (int n) const;
 	//lay con tro begin
 	T* begin();
 	//lay con tro en

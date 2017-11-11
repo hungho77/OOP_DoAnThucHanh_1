@@ -94,13 +94,13 @@ void CustomArray<T>::operator=(const CustomArray & a)
 }
 
 template<class T>
-T CustomArray<T>::operator[](int n)
+T& CustomArray<T>::operator[](int n)
 {
 	return *(this->m_pBegin + n);
 }
 
 template<class T>
-T CustomArray<T>::operator[](int n) const
+T& CustomArray<T>::operator[](int n) const
 {
 	return *(this->m_pBegin + n);
 }

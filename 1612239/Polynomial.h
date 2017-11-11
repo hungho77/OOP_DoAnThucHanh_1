@@ -19,8 +19,8 @@ public:
 	//phuong thuc xuat
 	void output(ostream &os);
 	//lay 1 don thuc tai vi tri i
-	Monomial getMonomial(int i);
-	Monomial getMonomial(int i) const;
+	Monomial& getMonomial(int i);
+	Monomial& getMonomial(int i) const;
 	//toan tu gan
 	void operator = (const Polynomial &f);
 	//toan tu + - * / %
